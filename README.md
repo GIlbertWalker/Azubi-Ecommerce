@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# AzubiShop is an ecommerce site that allow customers to buy products of their choice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As a front-end developer your task is to build Azubishop to look close to what the UI/UX team designed.
 
-## Available Scripts
+Click the link(<https://www.figma.com/file/XTtfboF1Hha4z2h3SkwTZ4/L2_5_weeklyProject?node-id=0%3A1&t=DFqCgOeedNWgesqp-1>)  to view the high fidelity wire-frames.(Figma)
 
-In the project directory, you can run:
+Azubi Africa requested the front-end should be implemented using React.
 
-### `npm start`
+--- Download assets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Step One
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ -Upon launch the homepage should display to allow customers to navigate through the available products
 
-### `npm test`
+ --First Page (Home Page)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ -Customers without login credentials should be redirected to the login page when they try to place an order.
 
-### `npm run build`
+ --Second page (Login Page)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ -User login page should provide an option to login or create an accounts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ -User data should be validated to ensure valid data is submitted. Hint(use controlled components)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Step Two
 
-### `npm run eject`
+ -After logging in, Users should be able to purchase products.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  Fourth Page (details page ==> checkout page)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Step three
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ -To persist user data, the data should be store in a local storage which serve as demo database.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ -The cart data should also be store in local storage.
 
-## Learn More
+#### Hint
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Hooks to look for
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   useState (To manage local state),
 
-### Code Splitting
+   useEffect (Handle Side effects),
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   useContext (To manage global state)
 
-### Analyzing the Bundle Size
+   useReducer (combine useContext and useReducer to manage your global state)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Routing is required (npm install react-router-dom)
