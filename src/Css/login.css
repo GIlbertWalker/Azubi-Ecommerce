@@ -8,26 +8,34 @@ background: #FFFFFF;
 list-style-type: none;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
+    
   }
   
   .navbar-left {
     display: flex;
+    flex:1;
     align-items: center;
     
   }
   
   .navbar-right {
-    border: 2px solid #001066;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
     display: flex;
-    align-items: right;
+    justify-content: flex-end;
   }
+
+.navbar-right p {
+    margin: 5px;
+}
   
 
 .form-content {
@@ -35,7 +43,7 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88vh; /* set the height of the container to 100% of the viewport height */
+    height: 85vh; /* set the height of the container to 100% of the viewport height */
    
     font-family: 'Inter';
     font-style: normal;
@@ -44,9 +52,9 @@ list-style-type: none;
     line-height: 19px;
   }
   
-.form h1 {
+form h1 {
     text-align: center;
-
+    margin: 40px;
 }
 .input{
     background: #F5F5F5;
@@ -70,4 +78,16 @@ height: 72px;
 background-color: #001066;
 border-radius: 8px;
 border: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+
+.btn{
+  width: 219px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavbaRegister from "./Navbaregister";
 import '../App.css'
+import '../Css/login.css'
 
 function RegisterPage() {
   const [email, setEmail] = useState("");
