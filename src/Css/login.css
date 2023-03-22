@@ -8,16 +8,27 @@ background: #FFFFFF;
 list-style-type: none;
 }
 
-.NavBar{
-    padding-top: 58.25px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.right-cont{
+.navbar {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .navbar-right {
+    border: 2px solid #001066;
+    display: flex;
+    align-items: right;
+  }
+  
 
 .form-content {
     max-width: 100%;

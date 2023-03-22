@@ -6,8 +6,9 @@ import RegistratioPage from './components/RegisterPage'
 function App() {
   return (
     <div className="App">  
-           
-      <LoginPage/>
+          
+      <RegistratioPage/>
+
     </div>
   );
 }

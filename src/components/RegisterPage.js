@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavbaRegister from "./Navbaregister";
+import '../App.css'
 
 function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -27,6 +28,7 @@ function RegisterPage() {
       <div className="navbar">
       <NavbaRegister Ninfo="Already have an account?" btnName="Sign in"/>
       </div>
+
       <div className="form-content">
         <div>
           <form>
@@ -36,6 +38,7 @@ function RegisterPage() {
             </label>
             <br />
             <input
+              className="input"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -48,6 +51,7 @@ function RegisterPage() {
             </label>
             <br />
             <input
+              className="input"
               value={pass}
               onChange={(e) => setPass(e.target.value)}
               type="password"
@@ -60,6 +64,7 @@ function RegisterPage() {
             </label>
             <br />
             <input
+              className="input"
               value={confirmpass}
               onChange={(e) => setConfirmpass(e.target.value)}
               type="password"
