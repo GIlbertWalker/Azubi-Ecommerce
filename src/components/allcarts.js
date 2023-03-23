@@ -1,14 +1,13 @@
-import React from 'react'
 
 const allcarts = [
     {
-      img: "./image/menshirt.png",
+      img: "./menshirt.png",
       product: "Men Shirt",
       productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
       price: "$29.00"
     },
     {
-      img: "./image/nikesneaker.png",
+      img: "./public/image/nikesneaker.png",
       product: "Sneaker Nike",
       productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
       price: "$39.00"
