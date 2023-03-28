@@ -28,7 +28,7 @@ function LoginPage() {
   return (
     <section className="main-section">
       <div className="navbar">
-        <NavbaRegister Ninfo="New to Azubi?" btnName="Sign Up"/>
+        <NavbaRegister Ninfo="New to AzubiShop?" btnName="Sign Up"/>
       </div>
 
       <div className="form-content">

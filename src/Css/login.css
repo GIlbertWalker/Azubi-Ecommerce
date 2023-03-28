@@ -1,73 +1,101 @@
 body{
-    position: relative;
-    height: 100vh; /* set the height of the container to 100% of the viewport height */
-    /* width: 1440px;
-    height: 1284px; */
+  position: relative;
+  height: 100vh; /* set the height of the container to 100% of the viewport height */
+  /* width: 1440px;
+  height: 1284px; */
 
-background: #FFFFFF;
-list-style-type: none;
+  background: #FFFFFF;
+  list-style-type: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
+/* Nav Bar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
     
-  }
+}
   
-  .navbar-right {
-    border: 2px solid #001066;
-    display: flex;
-    align-items: right;
-  }
+.navbar-left {
+  display: flex;
+  flex:1;
+  align-items: center;
   
+}
 
+.navbar-right {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-right p {
+  margin: 5px;
+}
+.navbar-center{
+  display: flex;
+} 
+.navbar-center p{
+    margin: 5px;
+}
+  
+/* form styles */
 .form-content {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 88vh; /* set the height of the container to 100% of the viewport height */
-   
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-  }
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; /* set the height of the container to 100% of the viewport height */
   
-.form h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+  
+form h1 {
     text-align: center;
-
+    margin: 40px;
 }
 .input{
-    background: #F5F5F5;
-     border: none;
-     height: 80px;
-     width: 547px;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     border-radius: 8px;
+  background: #F5F5F5;
+  border: none;
+  height: 80px;
+  width: 547px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
+
 .btn-form{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10;
-color: white;
-width: 547px;
-height: 72px;
-background-color: #001066;
-border-radius: 8px;
-border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10;
+  color: white;
+  width: 547px;
+  height: 72px;
+  background-color: #001066;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn{
+  width: 219px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
 }

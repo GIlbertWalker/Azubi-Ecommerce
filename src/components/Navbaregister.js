@@ -1,25 +1,24 @@
 import React from 'react'
 import '../Css/login.css'
 
-// import bag from 'azubi-ecommerce/public/bag'
 const NavbaRegister = props => {
   return (
-    <div className='navbar'>
-    <div className='navbar-left'>
-    
-      <li>AzubiShop</li>
-    </div>
+    <nav className='navbar'>
+      <div className='navbar-left'>
+        <li>AzubiShop</li>
+      </div>
 
-    <div className='navbar-right'>
-      <p>{props.Ninfo}</p>
-      <button className='btn'>{props.btnName}</button>
-    </div>
-    
-  </div>
+      <div className='navbar-center'>
+        <p className='home'>{props.Home}</p>
+        <p className='cart'>{props.Cart}</p>
+      </div>
+
+      <div className='navbar-right'>
+        <p className='info'>{props.Ninfo}</p>
+        <p><button className='btn'>{props.btnName}</button></p>
+      </div>
+    </nav>
   )
 }
 
 export default NavbaRegister
-
-
-
