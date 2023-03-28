@@ -8,6 +8,11 @@ const NavbaRegister = props => {
         <li>AzubiShop</li>
       </div>
 
+      <div className='navbar-center'>
+        <p className='home'>{props.Home}</p>
+        <p className='cart'>{props.Cart}</p>
+      </div>
+
       <div className='navbar-right'>
         <p className='info'>{props.Ninfo}</p>
         <p><button className='btn'>{props.btnName}</button></p>

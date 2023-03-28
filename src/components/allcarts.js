@@ -1,52 +1,51 @@
-import React from 'react'
 
 const allcarts = [
     {
-      img: "./image/menshirt.png",
+      img: "../images/menshirt.png",
       product: "Men Shirt",
       productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
       price: "$29.00"
     },
     {
-      img: "./image/nikesneaker.png",
+      img: "..//images/nikesneaker.png",
       product: "Sneaker Nike",
       productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
       price: "$39.00"
     },
     {
-      img: "./image/pumasneaker.png",
+      img: "../images/pumasneaker.png",
       product: "Puma Sneaker",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$44.00"
     },
     {
-      img: "../image/alonzidress.png",
+      img: "../images/alonzidress.png",
       product: "Aronzi Dress",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$13.00"
     },
     {
-      img: "../image/watch.png",
+      img: "../images/watch.png",
       product: "Watch",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$19.00"
     },
     {
-      img: "../image/cap.png",
+      img: "../images/cap.png",
       product: "Men Cap",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$10.00"
     },
     {
-      img: "../image/jeans.png",
+      img: "../images/jeans.png",
       product: "Ladies Jeans",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$40.00"
     },
     {
-      img: "../image/longsleeves.png",
+      img: "../images/longsleeves.png",
       product: "Long Sleeve",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",
       price: "$35.00"
     }
   ];
