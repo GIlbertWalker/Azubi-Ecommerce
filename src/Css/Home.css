@@ -5,13 +5,25 @@
 }
 
 .product-card {
-  border: 2px solid black;
-  flex-basis: calc(25% - 15px);
-  margin: bottom 15px;
+  flex-basis: calc(25% - 10px);
+  margin: 10px 0;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
+.card-items{
+  margin:10px;
+}
+
+.card-items img{
+  width: 100%;
+  height: auto;
+}
+
+
+
 .priceTag{
-  max-width: 75%;
+  max-width: 45%;
   display: flex;
   margin: 10px;
   justify-content: space-between;
