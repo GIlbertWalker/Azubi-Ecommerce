@@ -2,16 +2,24 @@ import React from 'react';
 import allcarts from './allcarts';
 import "../Css/Home.css"
 import NavbaRegister from './Navbaregister';
+import SearchBar from './search';
 
 export default function CartPage() {
   return (
     <div>
     <div className="navbar">
-        <NavbaRegister 
-        Cart="Cart"
-        Home="Home"
-        btnName="Login"/>
+      <NavbaRegister 
+      Cart="Cart"
+      Home="Home"
+      btnName="Login"/>
     </div>
+
+    <div class="search-bar">
+      <SearchBar/>
+    </div>
+    
+  
+
     <div className="product-container">
       {allcarts.map((product, index) => (
         <div className="product-card" key={index}>
@@ -21,7 +29,7 @@ export default function CartPage() {
             <p className='com_info'>{product.productDescription}</p>
             <div className='priceTag'>
               <button className='order'>Place order</button>      
-            <p>{product.price}</p>
+              <p>{product.price}</p>
             </div>
           </div>
         </div>
