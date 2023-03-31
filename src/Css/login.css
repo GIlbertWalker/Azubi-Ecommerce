@@ -1,9 +1,6 @@
 body{
   position: relative;
-  height: 100vh; /* set the height of the container to 100% of the viewport height */
-  /* width: 1440px;
-  height: 1284px; */
-
+  height: 100vh; 
   background: #FFFFFF;
   list-style-type: none;
 }
@@ -11,21 +8,20 @@ body{
 /* Nav Bar styles */
 nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  margin: 10px;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  margin: 0;
+  background-color: #FFFFFF;
     
 }
   
 .navbar-left {
+  margin-left: 10px;
   display: flex;
   flex:1;
   align-items: center;
   
 }
-
 .navbar-right {
   flex: 1;
   margin: 10px;
@@ -33,7 +29,6 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
-
 .navbar-right p {
   margin: 5px;
 }
@@ -44,6 +39,8 @@ nav {
     margin: 5px;
 }
   
+
+
 /* form styles */
 .form-content {
   max-width: 100%;
@@ -51,14 +48,12 @@ nav {
   justify-content: center;
   align-items: center;
   height: 85vh; /* set the height of the container to 100% of the viewport height */
-  
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
 }
-  
 form h1 {
     text-align: center;
     margin: 40px;
@@ -72,8 +67,6 @@ form h1 {
   margin-bottom: 20px;
   border-radius: 8px;
 }
-
-
 .btn-form{
   display: flex;
   justify-content: center;
@@ -92,7 +85,6 @@ form h1 {
   font-size: 16px;
   line-height: 19px;
 }
-
 .btn{
   width: 219px;
   height: 30px;
