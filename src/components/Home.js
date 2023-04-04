@@ -16,6 +16,7 @@ export default function CartPage() {
 
     <div class="search-bar">
       <SearchBar/>
+      <p>hi</p>
     </div>
     
   
