@@ -1,13 +1,296 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightgray;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Home Page Styling Starts Here*/
+
+button {
+  background-color: rgb(6, 6, 123);
+  color: white;
+  border-color: white;
+  width: fit-content;
+  height: 30px;
+  line-height: 20px;
+  border-radius: 5px;
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
 }
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+  margin: 10px auto;
+  margin-top: 50px;
+
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 300px;
+}
+
+.company-name {
+  color: rgb(4, 4, 146);
+
+}
+
+
+.home-cart-links {
+  margin-right: 280px;
+}
+
+
+a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: grey;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: larger;
+
+}
+
+a.active {
+  color: rgb(4, 4, 146);
+  font-weight: bold;
+}
+
+.main {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+
+.search-box {
+  width: 60%;
+  background-color: #dbd8d8;
+  margin-top: 40px;
+  margin-left: 20%;
+  height: 50px;
+  border-radius: 5px;
+  text-indent: 20px;
+  border: none;
+
+}
+
+.cart-list-container {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.cart img {
+  width: 100%;
+  max-width: 98%;
+  height: auto;
+}
+
+.cart {
+  border: solid lightgray;
+  width: 100%;
+}
+
+
+.Cartdetails {
+  width: 96%;
+  margin-top: 4px;
+  margin-left: 2%;
+}
+
+.Place-order-and-price {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Home Page Styling Ends Here*/
+
+/* Registration Page Styling Starts Here*/
+.registration-page {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.registration-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+}
+
+.sign-in-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  background-color: #dbd8d8;
+  border: none;
+  padding: 10px;
+  font-size: large;
+}
+
+.create-account-button {
+  width: 105%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgb(8, 8, 152);
+  border: none;
+  cursor: pointer;
+}
+
+/* Registration Page Styling Ends Here*/
+
+/* Login Page Styling Starts Here*/
+.login-page {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+}
+
+.new-to-azubi-register-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+
+}
+
+.have-account-login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+
+}
+
+.home-cart-links-Login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+
+}
+
+
+/* Login Page Styling Ends Here*/
+
+
+/* Details Page Styling Starts Here*/
+.details-page-main {
+  display: flex;
+  width: 80%;
+  height: 700px;
+  background-color: white;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.details-page-main-cart {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 80%;
+  height: 280px;
+  margin-left: 100px;
+  border: solid red;
+  /* remove border after test */
+}
+
+.details-page-image {
+  border-radius: 10px;
+}
+
+
+.details-page-information {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Details Page Styling Ends Here*/
+
+
+
+
+
+/* Cart Styling Starts Here*/
+.cart-main {
+  display: flex;
+  width: 80%;
+  height: 700px;
+  background-color: white;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.cart-main-grey-background {
+  display: flex;
+  margin-top: 70px;
+  margin-left: 100px;
+  background-color: lightgray;
+  width: 80%;
+  height: 150px;
+  border: solid red;
+  /*delete this border after test*/
+}
+
+/* Cart Styling Ends Here*/
