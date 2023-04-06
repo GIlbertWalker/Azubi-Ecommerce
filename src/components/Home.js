@@ -1,5 +1,5 @@
 import React from 'react';
-import allcarts from './allcarts';
+import allCarts from './allcarts';
 import "../Css/Home.css"
 import NavbaRegister from './Navbaregister';
 import SearchBar from './search';
@@ -14,27 +14,28 @@ export default function CartPage() {
       btnName="Login"/>
     </div>
 
-    <div class="search-bar">
-      <SearchBar/>
+    <div className="search-bar">
+    <SearchBar/>
+    
     </div>
     
-  
-
-    <div className="product-container">
-      {allcarts.map((product, index) => (
-        <div className="product-card" key={index}>
-          <div className='card-items'>
-            <img src={product.img} alt={product.product} />
-            <h2>{product.product}</h2>
-            <p className='com_info'>{product.productDescription}</p>
-            <div className='priceTag'>
-              <button className='order'>Place order</button>      
-              <p>{product.price}</p>
+    <div className="product-grid">
+        {allCarts.map((product, index) => (
+          <div className="product-container" key={index}>
+            <div className="product-card">
+              <div className="card-items">
+                <img src={product.img} alt={product.product} />
+                <h2>{product.product}</h2>
+                <p className="com_info">{product.productDescription}</p>
+                <div className="priceTag">
+                  <button className="order">Place order</button>      
+                  <p>{product.price}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
 }

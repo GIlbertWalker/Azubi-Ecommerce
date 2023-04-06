@@ -4,16 +4,16 @@ import '../Css/login.css'
 const NavbaRegister = props => {
   return (
     <nav className='navbar'>
-      <div className='navbar-left'>
+      <div className='left'>
         <li>AzubiShop</li>
       </div>
 
-      <div className='navbar-center'>
+      <div className='center'>
         <p className='home'>{props.Home}</p>
         <p className='cart'>{props.Cart}</p>
       </div>
 
-      <div className='navbar-right'>
+      <div className='right'>
         <p className='info'>{props.Ninfo}</p>
         <p><button className='btn'>{props.btnName}</button></p>
       </div>
