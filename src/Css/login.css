@@ -2,7 +2,6 @@ body{
   margin: 0 auto;
   background: #FFFFFF;
   list-style-type: none;
-  border: 2px solid rgb(17, 19, 14);
 
 }
 
@@ -13,7 +12,6 @@ body{
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  
 }
   
 .left {
@@ -23,6 +21,15 @@ body{
   align-items: center;
   
 }
+
+.center{
+  display: flex;
+  flex-direction: row;
+} 
+.center a{
+    margin: 5px;
+}
+
 .right {
   flex: 1;
   margin: 10px;
@@ -33,12 +40,7 @@ body{
 .right p {
   margin: 5px;
 }
-.center{
-  display: flex;
-} 
-.navbar-center p{
-    margin: 5px;
-}
+
   
 
 
@@ -86,9 +88,12 @@ form h1 {
   font-size: 16px;
   line-height: 19px;
 }
+
 .btn{
-  width: 219px;
+  width: 103px;
   height: 30px;
   border-radius: 8px;
   border: none;
+  background-color: #001066;
+  color: #F5F5F5;
 }
