@@ -10,7 +10,9 @@ export default function CartPage() {
     <div className="navbar">
       <NavbaRegister 
       Cart="Cart"
+      // cartLink= add routing
       Home="Home"
+      homeLink="/"
       btnName="Login"/>
     </div>
 

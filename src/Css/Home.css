@@ -1,7 +1,11 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
-  font-family: inter,"san-serif";
-}
+  font-family: inter,"san-serif";}
 
 .navbar{
   box-shadow: 0 0  5px rgba(0, 0, 0, 0.2);
@@ -61,12 +65,13 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
   height: 35px;
-  width: 180px;
+  width: 60%;
   border-radius: 4px;
   padding: 8px 25px 0 0;
   gap: 10px;
 }
 .priceTag p{
+
   height: 19px;
   width: 59px;
   left: 157px;
