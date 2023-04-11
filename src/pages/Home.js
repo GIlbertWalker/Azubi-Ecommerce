@@ -1,19 +1,21 @@
 import React from 'react';
-import allCarts from './allcarts';
+import allCarts from '../components/allcarts';
 import "../Css/Home.css"
-import NavbaRegister from './Navbaregister';
-import SearchBar from './search';
+import NavbaRegister from '../components/Navbaregister';
+import SearchBar from '../components/search';
 
-export default function CartPage() {
+
+export default function HomePage() {
   return (
     <div>
     <div className="navbar">
       <NavbaRegister 
       Cart="Cart"
-      // cartLink= add routing
-      Home="Home"
-      homeLink="/"
-      btnName="Login"/>
+      img="./images/bag.png"
+      btnName="Login"
+      path="Login"
+
+      />
     </div>
 
     <div className="search-bar">

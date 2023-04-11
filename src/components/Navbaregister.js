@@ -1,23 +1,36 @@
 import React from 'react';
 import '../Css/login.css';
+import { Link, NavLink,useHistory } from 'react-router-dom';
+import '../pages/cartpage';
 
 const NavbaRegister = props => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push(props.path);
+  };
+
   return (
     <nav className='navbar'>
-      <div className='left'>
-        <a href='/'>AzubiShop</a>
-      </div>
+      <Link to='/' className='left'>
+        <img src={props.img} alt='logo'></img>
+        <p>AzubiShop</p>
+      </Link>
 
       <div className='center'>
-        <a href={props.homeLink}>Home</a>
-        <a href={props.cartLink}>Cart</a>
+        <NavLink exact to='/'>Home</NavLink>
+        <NavLink exact to='/Cart'>Cart</NavLink>
       </div>
 
       <div className='right'>
         <p className='info'>{props.Ninfo}</p>
-        <button className='btn'>{props.btnName}</button>
+        <button className='btn' onClick={handleClick}>
+          {props.btnName}
+        </button>
       </div>
     </nav>
+
+    
   )
 }
 
