@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavbaRegister from "./Navbaregister";
+import NavbaRegister from "../components/Navbaregister";
 import '../App.css'
 import '../Css/login.css'
 
@@ -27,7 +27,13 @@ function RegisterPage() {
   return (
     <section className="main-section">
       <div className="navbar">
-      <NavbaRegister Ninfo="Already have an account?" btnName="Sign in"/>
+       <NavbaRegister
+          Ninfo="Already have an account?" 
+          img="./images/bag.png"
+          btnName="Sign in"
+          linkTo="/login"
+      
+        />
       </div>
 
       <div className="form-content">

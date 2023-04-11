@@ -3,14 +3,12 @@ const allcarts = [
     {
       img: "../images/menshirt.png",
       product: "Men Shirt",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
-      price: "$29.00"
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",      price: "$29.00"
     },
     {
       img: "..//images/nikesneaker.png",
       product: "Sneaker Nike",
-      productDescription: "Lorem timpanicum ibanumbra gelum  absulam navigitus abalus",
-      price: "$39.00"
+      productDescription: "Lorem ipsum dolor sit amet consectetur. Eget orci viverra vel",      price: "$39.00"
     },
     {
       img: "../images/pumasneaker.png",
