@@ -47,3 +47,5 @@ Azubi Africa requested the front-end should be implemented using React.
    useReducer (combine useContext and useReducer to manage your global state)
 
 - Routing is required (npm install react-router-dom)
+
+Project by The Bravo Team of Azubi
