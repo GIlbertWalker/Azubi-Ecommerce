@@ -1,38 +1,51 @@
 import React, { useState } from "react";
 import NavbaRegister from "../components/Navbaregister";
-import '../App.css'
-import '../Css/login.css'
+import { useNavigate } from "react-router-dom";
+import "../App.css";
+import "../Css/login.css";
 
 function RegisterPage() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [confirmpass, setConfirmpass] = useState("");
+  const [name, setName] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+   const handleRegister = (e) => {
     e.preventDefault();
     if (!email || !pass || !confirmpass) {
       alert("Please fill in all fields!");
     } else if (pass !== confirmpass) {
       alert("Passwords do not match!");
     } else {
-      console.log(email);
-      console.log(pass);
-      localStorage.setItem("email", email);
-      localStorage.setItem("password", pass);
-      alert("Account created successfully!");
+      const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+      const existingUser = registeredUsers.find(user => user.email === email);
+      if (existingUser) {
+        alert("This email address is already registered.");
+      } else {
+        console.log(email);
+        console.log(pass);
+        registeredUsers.push({ email, pass });
+        localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
+        alert("Account created successfully!");
+      };
+      navigate.push({
+        pathname: "/Home",
+        state: {
+          name: name
+        }
+      });
     }
   };
-  
 
   return (
     <section className="main-section">
       <div className="navbar">
-       <NavbaRegister
-          Ninfo="Already have an account?" 
+        <NavbaRegister
+          Ninfo="Already have an account?"
           img="./images/bag.png"
           btnName="Sign in"
-          linkTo="/login"
-      
+          path="/Login"
         />
       </div>
 
@@ -40,6 +53,19 @@ function RegisterPage() {
         <div>
           <form>
             <h1>Create an account</h1>
+            <label className="label" htmlFor="name">
+              Name
+            </label>
+            <br />
+            <input
+              className="input"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              id="name"
+              name="name"
+            />
+            <br />
             <label className="label" htmlFor="email">
               Email Address
             </label>
@@ -79,7 +105,7 @@ function RegisterPage() {
               name="confirm-password"
             />
             <br />
-            <button onClick={handleSubmit} className="btn-form" type="submit">
+            <button onClick={handleRegister} className="btn-form" type="submit">
               Create an account
             </button>
           </form>
@@ -90,4 +116,3 @@ function RegisterPage() {
 }
 
 export default RegisterPage;
-
