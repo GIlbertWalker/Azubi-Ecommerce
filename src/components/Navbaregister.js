@@ -1,13 +1,13 @@
 import React from 'react';
 import '../Css/login.css';
-import { Link, NavLink,useHistory } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import '../pages/cartpage';
 
 const NavbaRegister = props => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push(props.path);
+    navigate(props.path);
   };
 
   return (

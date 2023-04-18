@@ -3,17 +3,24 @@ import allCarts from '../components/allcarts';
 import "../Css/Home.css"
 import NavbaRegister from '../components/Navbaregister';
 import SearchBar from '../components/search';
-
+import { useNavigate} from 'react-router';
 
 export default function HomePage() {
+
+  const navigate = useNavigate();
+
+  // Retrieve the name from localStorage
+  const name = localStorage.getItem("name");
+
   return (
     <div>
     <div className="navbar">
       <NavbaRegister 
       Cart="Cart"
       img="./images/bag.png"
+      Ninfo={name ? `Hello, ${name}!` : ""}
       btnName="Login"
-      path="Login"
+      path="/Login"
 
       />
     </div>

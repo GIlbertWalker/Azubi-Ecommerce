@@ -27,8 +27,9 @@ function LoginPage({ history }) {
       <div className="navbar">
         <NavbaRegister 
         img="./images/bag.png"
-        Ninfo="Already have an account?" 
-        btnName="Sign in"
+        Ninfo="New to AzubiShop?" 
+        btnName="Sign Up"
+        path='/SignUp'
         />
       </div>
 
